@@ -20,3 +20,10 @@ $routes = [
 
 require $routes[$page];
 
+if ($page == 'add') {
+    if ($_SESSION["liau"] != "") {
+        require $routes[$page];
+    } else {
+        header("location: login");
+    }
+}
