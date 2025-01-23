@@ -18,58 +18,58 @@
 
     teamLinks: [{
         'teamname': 'FC Bayern München',
-        'link': 'verein?team=<?= $teamname ?>',
+        'link': 'verein?team=Bayern München',
       }, {
         'teamname': 'Borussia Dortmund',
-        'link': 'verein?team=BorussiaDortmund'
+        'link': 'verein?team=Borussia Dortmund'
       }, {
         'teamname': 'Bayer Leverkusen',
-        'link': 'verein?team=BayerLeverkusen'
+        'link': 'verein?team=Bayer Leverkusen'
       }, {
         'teamname': 'Eintracht Frankfurt',
-        'link': 'verein?team=EintrachtFrankfurt'
+        'link': 'verein?team=Eintracht Frankfurt'
       }, {
         'teamname': 'RB Leipzig',
-        'link': 'verein?team=RBLeipzig'
+        'link': 'verein?team=RB Leipzig'
       },{
         'teamname': 'SC Freiburg',
-        'link': 'verein?team=SCFreiburg'
+        'link': 'verein?team=SC Freiburg'
       },{
         'teamname': 'VfB Stuttgart',
-        'link': 'verein?team=VfBStuttgart'
+        'link': 'verein?team=VfB Stuttgart'
       },{
         'teamname': '1. FSV Mainz 05',
-        'link': 'verein?team=1.FSVMainz05'
+        'link': 'verein?team=1. FSV Mainz 05'
       },{
         'teamname': 'Werder Bremen',
-        'link': 'verein?team=WerderBremen'
+        'link': 'verein?team=Werder Bremen'
       },{
         'teamname': 'VfL Wolfsburg',
-        'link': 'verein?team=VfLWolfsburg'
+        'link': 'verein?team=VfL Wolfsburg'
       },{
         'teamname': 'Mönchengla',
-        'link': 'verein?team=BorussiaMönchengladbach'
+        'link': 'verein?team=Borussia Mönchengladbach'
       },{
         'teamname': '1. FC Union Berlin',
-        'link': 'verein?team=1.FCUnionBerlin'
+        'link': 'verein?team=1. FC Union Berlin'
       },{
         'teamname': 'FC Augsburg',
-        'link': 'verein?team=FCAugsburg'
+        'link': 'verein?team=FC Augsburg'
       },{
         'teamname': 'TSG 1899 Hoffenheim',
-        'link': 'verein?team=TSG1899Hoffenheim'
+        'link': 'verein?team=TSG 1899 Hoffenheim'
       },{
         'teamname': 'FC St. Pauli',
-        'link': 'verein?team=FCSt.Pauli'
+        'link': 'verein?team=FC St. Pauli'
       },{
         'teamname': '1. FC Heidenheim',
-        'link': 'verein?team=1.FCHeidenheim'
+        'link': 'verein?team=1. FC Heidenheim'
       },{
         'teamname': 'Holstein Kiel',
-        'link': 'verein?team=HolsteinKiel'
+        'link': 'verein?team=Holstein Kiel'
       },{
         'teamname': 'VfL Bochum',
-        'link': 'verein?team=VfLBochum'
+        'link': 'verein?team=VfL Bochum'
       }]
   };
 </script>

@@ -7,10 +7,10 @@ $newss = $myStmt->fetchAll();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $newss[] = [
-        'created_by' => $_NEWS['name'],
-        'news_title' => $_NEWS['titel'],
-        'news_text' => $_NEWS['text'],
-        'img_source' => $_NEWS['Bildlink'] ?? ''
+        'created_by' => $_POSTS['name'],
+        'news_title' => $_POSTS['titel'],
+        'news_text' => $_POSTS['text'],
+        'img_source' => $_POSTS['Bildlink'] ?? ''
         
     ];
 }

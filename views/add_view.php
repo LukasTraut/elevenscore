@@ -1,5 +1,4 @@
 <?php
-require "views/templates/header.php";
 require 'models/add_modle.php';
 ?>
 

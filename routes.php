@@ -1,11 +1,11 @@
 <?php
 $page = basename($_SERVER['REQUEST_URI'] ?? '');
-$page = basename($_SERVER['REQUEST_URI'] ?? '');
 
 if (isset($_GET['team'])) {
     $pos = strpos($page, "?");
     $page = substr($page,0, $pos);
 }
+
 $routes = [
     'elevenscore'          => 'views/home_view.php',
     'home'          => 'views/home_view.php',
@@ -16,9 +16,9 @@ $routes = [
     'login'         => 'views/login_view.php',
     'signup'         => 'views/signup_view.php',
     'verein'           => 'views/verein_view.php',
+    'kader'           => 'views/kader_view.php',
+    'mannschaft'           => 'views/mannschaft_view.php',
 ];
-
-require $routes[$page];
 
 if ($page == 'add') {
     if ($_SESSION["liau"] != "") {
@@ -26,4 +26,7 @@ if ($page == 'add') {
     } else {
         header("location: login");
     }
+ } 
+ else  { 
+    require $routes[$page];
 }

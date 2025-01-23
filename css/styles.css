@@ -40,6 +40,9 @@ h1, h2, h3 {
 h1 {
     text-align: center;
 }
+h2 {
+    text-align: center;
+}
 p {
     text-align: center;
 }
@@ -104,6 +107,21 @@ div .blwTeam > a {
 .blwTeam > a:hover {
     color: #e70000; 
 }
+.bildlink {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.homebild {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto 100px;
+    display: block;
+}
+h1.home {
+    color: black;
+  }
 
 
 /* Responsive Design */
@@ -115,4 +133,10 @@ div .blwTeam > a {
     nav a {
         margin: 0.5rem 0;
     }
+}
+
+table {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }

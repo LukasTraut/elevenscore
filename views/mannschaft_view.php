@@ -1,32 +1,29 @@
-<?php 
-require 'models/verein_modle.php';
+<?php
+require 'models/mannschaft_modle.php';
 ?>
+<p id="verein" style="display:none;"><?= $_GET['team'] ?? '' ?></p>
+<p id="id" style="display:none;"><?= $_GET['id'] ?? '' ?></p>
+<div id="team-container">
 
-<p style="display:none;"><?= $_SERVER['verein'] ?></p>
-<p style="display:none;"><?= $_SERVER['id'] ?></p>
-
+</div>
 <script>
-
     const vereinElement = document.getElementById('verein');
     const idElement = document.getElementById('id');
-
 
     if (!vereinElement || !idElement) {
         console.error('Error: Required elements not found!');
     } else {
-
-        
         const verein = encodeURIComponent(vereinElement.textContent.trim());
         const id = encodeURIComponent(idElement.textContent.trim());
-        
+
         // Construct the API URL
         const apiUrl = `http://unsung.cc/api/v1/verein-v1?verein=${verein}&id=${id}`;
 
-        // Make the POST request
+        // Make the GET request
         fetch(apiUrl, {
-            method: 'POST',
+            method: 'GET',
             headers: {
-                'Content-Type': 'application/json' // Adjust if different content type is needed
+                'Content-Type': 'application/json'
             }
         })
         .then(response => {

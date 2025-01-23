@@ -1,5 +1,4 @@
 <?php
-require "views/templates/header.php";
 require 'models/news_modle.php';
 
 ?>
@@ -13,11 +12,13 @@ require 'models/news_modle.php';
         </h2>
         <p id="news-content"><?= htmlspecialchars($news[3]) ?>
         </p>
+        <div class ="bildlink">
         <?php if ($news[5] !== '') : ?>
-        <img src="<?= ($news[5]) ?>">
+        <img src="<?= ($news[5]) ?>" alt="News Image" class="bildlink">
         <?php endif; ?>
         <p  id="news-content">Geschrieben von: <?= htmlspecialchars($news[1]) ?> am <?= htmlspecialchars($news[4]) ?>
         </p>
         <hr>
     </div>
 <?php endforeach; ?>
+
